@@ -1,0 +1,77 @@
+/**
+ * CssMasonry.js v0.1.0
+ * https://github.com/vah7id/CssMasonry
+ * MIT licensed
+ *
+ * Copyright (C) 2014 Vahid Taghizadeh (@vah7id)
+ */
+
+.wrapper {
+	width:100%;
+	max-width: 1100px;
+	min-width: 200px;
+	margin: 10px auto;
+}
+
+.columns {
+	-webkit-column-count: 3;
+	-webkit-column-gap: 5px;
+	-webkit-column-fill: auto;
+	-moz-column-count: 3;
+	-moz-column-gap: 5px;
+	-moz-column-fill: auto;
+	column-count: 3;
+	column-gap: 5px;
+	column-fill: auto;
+}
+
+.item {
+	display: inline-block;
+	background: #fafafa;
+	font-family:Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 20px;
+	color: #444;
+	line-height: 28px;
+	border: 1px solid #eee;
+	margin: 0 0 5px;
+	-webkit-column-break-inside: avoid;
+	-moz-column-break-inside: avoid;
+	column-break-inside: avoid;
+	padding: 0 10px 0 10px;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+
+@media (min-width: 0) and (max-width: 320px) {
+	.columns {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+	.columns {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+	.columns {
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		column-count: 3;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 2920px) {
+	.columns {
+		-webkit-column-count: 4;
+		-moz-column-count: 4;
+		column-count: 4;
+	}
+}
