@@ -43,42 +43,42 @@ Second step: adding html template of cssMasonry to your html file :
 
 Now on to the styling:
 
+      .columns {
+          -moz-column-count: 3;
+          -moz-column-gap: 10px;
+          -moz-column-fill: auto;
+          -webkit-column-count: 3;
+          -webkit-column-gap: 10px;
+          -webkit-column-fill: auto;
+          column-count: 3;
+          column-gap: 15px;
+          column-fill: auto;
+       }
+      
 
-.columns {
-    -moz-column-count: 3;
-    -moz-column-gap: 10px;
-    -moz-column-fill: auto;
-    -webkit-column-count: 3;
-    -webkit-column-gap: 10px;
-    -webkit-column-fill: auto;
-    column-count: 3;
-    column-gap: 15px;
-    column-fill: auto;
-}
-
-column-count is a count of items in each column of our layout. and it can change in each media queries.
-coulmn-gap is distance of every columns together.
+<B>column-count</B> is a count of items in each column of our layout. and it can change in each media queries.
+<B>coulmn-gap</B> is distance of every columns together.
       
 and .item class is your boxes in each columns. you can place your css styles in this class about each boxes. 
 
 For good measure, I added some media queries to adjust the number of columns depending on browser width:
 
+      @media (min-width: 320px) and (max-width: 500px) { 
+      	.columns {
+      		-webkit-column-count: 2;
+      		-moz-column-count: 2;
+      		column-count: 2;
+      	}
+      }
 
-@media (min-width: 320px) and (max-width: 500px) {
-	.columns {
-		-webkit-column-count: 2;
-		-moz-column-count: 2;
-		column-count: 2;
-	}
-}
 
-@media (min-width: 500px) and (max-width: 768px) {
-	.columns {
-		-webkit-column-count: 3;
-		-moz-column-count: 3;
-		column-count: 3;
-	}
-}
+      @media (min-width: 500px) and (max-width: 768px) { 
+      	.columns {
+      		-webkit-column-count: 3;
+      		-moz-column-count: 3;
+      		column-count: 3;
+      	}
+      }
 
 
 This won't work in Internet Explorer 9 and below as it don't support multi column. However, you can use it if you don't care about it ;)
