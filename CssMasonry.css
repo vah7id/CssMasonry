@@ -14,15 +14,15 @@
 }
 
 .columns {
-	-webkit-column-count: 3;
-	-webkit-column-gap: 5px;
-	-webkit-column-fill: auto;
-	-moz-column-count: 3;
-	-moz-column-gap: 5px;
-	-moz-column-fill: auto;
-	column-count: 3;
-	column-gap: 5px;
-	column-fill: auto;
+    -moz-column-count:3;
+    -moz-column-gap: 10px;
+    -moz-column-width: 30%;
+    -webkit-column-count:3;
+    -webkit-column-gap: 10px;
+    -webkit-column-width: 30%;
+    column-count: 3;
+    column-gap: 10px;
+    column-width: 30%;
 }
 
 .item {
